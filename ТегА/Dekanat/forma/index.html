@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,100;0,500;0,700;1,100&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:ital,wght@0,100;0,500;0,700;1,100&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="style.css">
+    <title>Dekanat</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__menu">
+            <button class="header__button-left">
+                <span class="header__span-img"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" fill="#fff"><path d="M3 18h13v-2H3v2zm0-5h10v-2H3v2zm0-7v2h13V6H3zm18 9.59L17.42 12 21 8.41 19.59 7l-5 5 5 5L21 15.59z"></path></svg></span>
+                <span class="header__span"></span>
+            </button>
+            <h6 class="header__title">ФГБОУ ВО "ГГНТУ им. акад. М.Д. Миллионщикова"</h6>
+            <h6 class="header__text">. .</h6>
+            <button class="header__button-right">
+                <span class="header__span-img"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" fill="#fff"><path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"></path></svg></span>
+                <span class="header__span"></span>
+            </button>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form__body">
+                <h1 class="form__body-title">Заказ справки о доходах для студентов очной формы обучения</h1>
+                <div class="form__body-main">
+                <div class="form__item">
+                    <input type="text" id="formName" class="form__input" name="name" placeholder=" ">
+                    <label for="formName" class="form__label"><span>ФИО (полностью): *</span></label>
+                </div>
+                <div class="form__item">
+                    <input type="text" id="formGroup" class="form__input" name="group" placeholder=" ">
+                    <label for="formGroup" class="form__label"><span>Группа: *</span></label>
+                </div>
+                <div class="form__item">
+                    <div class="form__label-options">Институт: *</div>
+                    <select name="institute" class="select">
+                        <option value="" selected>Институт прикладных информационных технологий</option>
+                        <option value="">Институт нефти и газа</option>
+                        <option value="">Институт цифровой экономики и технологического предпринимательства</option>
+                        <option value="">Институт строительства, архитектуры и дизайна</option>
+                        <option value="">Институт энергетики</option>
+                        <option value="">Факультет среднего профессионального образования</option>
+                        <option value="">Институт повышения квалификации и переподготовки кадров</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <div class="form__label-options">Курс: *</div>
+                    <select name="well" class="select">
+                        <option value="" selected class="select-active">1 курс</option>
+                        <option value="">2 курс</option>
+                        <option value="">3 курс</option>
+                        <option value="">4 курс</option>
+                        <option value="">5 курс</option>
+                        <option value="">1 курс магистратуры</option>
+                        <option value="">2 курс магистратуры</option>
+                        <option value="">1 курс аспирантуры</option>
+                        <option value="">2 курс аспирантуры</option>
+                        <option value="">3 курс аспирантуры</option>
+                        <option value="">4 курс аспирантуры</option>
+                        <option value="">5 курс аспирантуры</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <input type="text" id="formRecorfBook" class="form__input" name="name" placeholder=" ">
+                    <label for="formRecordBook" class="form__label">Номер зачётки: *</label>
+                </div>
+                <div class="form__item">
+                    <div class="form__label-options">Период: *</div>
+                    <select name="period" class="select">
+                        <option value="" selected class="select-active">выберите...</option>
+                        <option value="">1 месяц</option>
+                        <option value="">2 месяца</option>
+                        <option value="">3 месяца</option>
+                        <option value="">4 месяца</option>
+                        <option value="">5 месяцев</option>
+                        <option value="">6 месяцев</option>
+                        <option value="">7 месяцев</option>
+                        <option value="">8 месяцев</option>
+                        <option value="">9 месяцев</option>
+                        <option value="">10 месяцев</option>
+                        <option value="">11 месяцев</option>
+                        <option value="">12 месяцев</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <div class="form__label-options">По какой месяц: *</div>
+                    <select name="month" class="select">
+                        <option value="" selected class="select-active">май, 2022</option>
+                        <option value="">апрель, 2022</option>
+                        <option value="">март, 2022</option>
+                        <option value="">февраль, 2022</option>
+                        <option value="">январь, 2021</option>
+                        <option value="">декабрь, 2021</option>
+                        <option value="">ноябрь, 2021</option>
+                        <option value="">октябрь, 2021</option>
+                        <option value="">сентябрь, 2021</option>
+                        <option value="">август, 2021</option>
+                        <option value="">июль, 2021</option>
+                        <option value="">июнь, 2021</option>
+                        <option value="">май, 2021</option>
+                    </select>
+                    <div><span class="form__span">Справки за текущий месяц можно заказать только после 28 числа данного месяца.</span></div>
+                </div>
+                <div class="form__item">
+                    <input type="text" id="formAppointment" class="form__input" name="name" placeholder=" ">
+                    <label for="formAppointment" class="form__label">Назначение: *</label>
+                    <div><span class="form__span">Укажите полное наименование организации. Если справка нужна для Управления социальной защиты населения, то обязательно указывайте район. Например: Управление социальной защиты населения администрации Шалинского района Чеченской республики.</span></div>
+                </div>
+                <div class="form__item">
+                    <div class="form__title">Обучение: *</div>
+                    <div class="options">
+                        <div class="options__item">
+                            <input id="formRightHanded" checked type="radio" value="budget" name="hand" class="options__input">
+                            <label for="formRightHanded" class="options__label">Бюджетное</label>
+                        </div>
+                        <div class="options__item">
+                            <input id="formLeftHanded" type="radio" value="commerce" name="hand" class="options__input">
+                            <label for="formLeftHanded" class="options__label">Коммерческое</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__title">Количество справок: *</div>
+                    <div class="options">
+                        <div class="options__item">
+                            <input id="formOne" checked type="radio" value="one" name="amount" class="options__input">
+                            <label for="formOne" class="options__label"><span>1</span></label>
+                        </div>
+                        <div class="options__item">
+                            <input id="formTwo" type="radio" value="two" name="amount" class="options__input">
+                            <label for="formTwo" class="options__label"><span>2</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <label for="formMessage" class="options__label-textarea">Сообщение:</label>
+                    <div><textarea name="message" id="formMessage" class="form__input"></textarea></div>
+                </div>
+                <div class="form__item">
+                    <div class="checkbox">
+                        <input id="formAgreement" type="checkbox" value="one" name="Agreement" class="checkbox__input">
+                        <label for="formAgreement" class="checkbox__label"><span>Я даю своё согласие на обработку персональных данных в соответсвии с <a href="#">Условиями</a></span></label>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary form__button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" > 
+      Добавить ответ 
+    </button> 
+     
+    <!-- Modal --> 
+    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> 
+      <div class="modal-dialog modal-dialog-centered"> 
+        <div class="modal-content"> 
+          <div class="modal-header"> 
+            <h5 class="modal-title" id="staticBackdropLabel">Добавить ответ</h5> 
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
+          </div> 
+          <div class="modal-body "> 
+           
+                  <form action="1.php" method="post" enctype="multipart/form-data" > 
+                     
+                    <div class="popup__title">Заявка отправлена</div>
+                    
+                    </form> 
+               
+          </div> 
+          <div class="modal-footer"> 
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Отмена</button> 
+          </div> 
+        </div> 
+      </div> 
+    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
