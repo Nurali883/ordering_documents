@@ -1,0 +1,61 @@
+<html lang="ru"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;family=Roboto:ital,wght@0,100;0,700;1,100&amp;family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo"><img src="./img/logo.png" alt=""></a>
+        <div class="header__title">Подача заявок на студенческие документы</div>
+    </header>
+
+    <div class="form__wrapper">
+
+    <div class="form">
+        
+        <form action="./ТегА/index.html" id="form">
+        <div class="form__title">Авторизация</div>
+
+        <div class="form__group">
+            <div class="form__group-icon"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path></svg></div>
+            <div class="form__group-input">
+                <input type="text" name="name" class="form__input" placeholder=" " id="formName" required>
+                <label class="form__label" for="formName">Имя пользователя</label>
+            </div>
+        </div>
+        <div class="form__group">
+            <div class="form__group-icon"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></svg></div>
+            <div class="form__group-input">
+                <input type="password" name="password" class="form__input" placeholder=" " id="formPassword" required>
+                <label class="form__label" for="formPassword">Пароль</label>
+            </div>
+        </div>
+        <div class="form__checkbox">
+            <label class="form__checkbox-label">
+                <span class="form__checkbox-button">
+                    <span class="form__checkbox-icon">
+                        <input type="checkbox" class="form__checkbox-input" id="id_1">
+                        <label for="id_1" class="form__checkbox-img"></label>
+                    </span>
+                    <span class="form__checkbox__touch-ripple"></span>
+                </span>
+                <span class="form__checkbox-text">Запомнить меня</span>
+            </label>
+        </div>
+        <div class="form__button">
+            <button type="submit" class="form__button__container">Войти</button>
+        </div>
+        </form>
+    </div>
+    <div class="form__image">
+        <div class="form__image-color"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body></html>
